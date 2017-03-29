@@ -594,7 +594,7 @@ sampleplayer.CastPlayer.prototype.preloadVideo_ = function(mediaInformation) {
   
   
 
- /*  var jsonO = [];
+   var jsonO = [];
 	  var jsonObj = [];
 	  var item = {};
 	  item ["userId"] = "12345";
@@ -608,7 +608,7 @@ sampleplayer.CastPlayer.prototype.preloadVideo_ = function(mediaInformation) {
 	    jsonO.push(item2);
 		
 		console.log (JSON.stringify(jsonObj));
-		var customData=JSON.stringify(jsonObj);*/
+		var customData=JSON.stringify(jsonObj);
 		
 		//host.licenseUrl = "https://lic.staging.drmtoday.com/license-proxy-widevine/cenc/?specConform=true";
 		
@@ -859,23 +859,15 @@ sampleplayer.CastPlayer.prototype.loadVideo_ = function(info) {
         this.preloadPlayer_ = null;
       }
       this.log_('Regular video load');
-     /* var host = new cast.player.api.Host({
+      var host = new cast.player.api.Host({
         'url': url,
         'mediaElement': this.mediaElement_,
 		'protectionSystem':cast.player.api.ContentProtection.PLAYREADY,
 		 'licenseUrl': "https://lic.staging.drmtoday.com/license-proxy-headerauth/drmtoday/RightsManager.asmx",
 		 	 'licenseCustomData': "eyJ1c2VySWQiOiIxMjM0NSIsInNlc3Npb25JZCI6IjEyMzQ1NjdjaHJvbWVjYXN0IiwibWVyY2hhbnQiOiJhZnJvc3RyZWFtIn0=",
-      });*/
-	  
-	  
-	  
-	        var host = new cast.player.api.Host({
-        'url': url,
-        'mediaElement': this.mediaElement_,
-
       });
 	  
-	 /*  var jsonO = [];
+	   var jsonO = [];
 	  var jsonObj = [];
 	  var item = {};
 	  item ["userId"] = "12345";
@@ -938,8 +930,6 @@ sampleplayer.CastPlayer.prototype.loadVideo_ = function(info) {
 
 			  return responseArray;
 			};
-			
-			*/
 	
       host.onError = loadErrorCallback;
 	  
