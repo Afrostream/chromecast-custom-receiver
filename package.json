@@ -1,6 +1,6 @@
 {
   "name": "chromecast-custom-receiver ",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "simple chromecast receiver",
   "main": "player.js",
   "scripts": {},
